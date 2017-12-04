@@ -1,5 +1,6 @@
 ## Setup
 1. First set database details in env
+   Run composer install
    Then run migrations and seeder
 ~~~
 php artisan migrate
