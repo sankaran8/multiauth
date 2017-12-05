@@ -19,9 +19,9 @@ class UsersTableSeeder extends Seeder
 
         DB::table('admins')->insert([
             'name' 			=> str_random(10),
-            'email' 		=> 'admin@gmail.com',
+            'login-name' 	=> 'admin@gmail.com',
             'job_title' 	=> str_random(10),
-            'c_password' 	=> md5('123456'),
+            'passwordhas' 	=> md5('123456'),
         ]);
     }
 }

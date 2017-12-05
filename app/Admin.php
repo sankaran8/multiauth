@@ -19,7 +19,7 @@ class Admin extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'c_password', 'job_title',
+        'name', 'email', 'passwordhas', 'job_title',
     ];
 
     /**
@@ -29,7 +29,7 @@ class Admin extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'c_password', 'remember_token',
+        'passwordhas', 'remember_token',
     ];
 
     /** 
@@ -37,6 +37,6 @@ class Admin extends Authenticatable
      */
     public function getAuthPassword()
     {
-        return $this->c_password;
+        return $this->passwordhas;
     }
 }
